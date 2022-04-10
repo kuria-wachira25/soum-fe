@@ -34,6 +34,7 @@ export class AppComponent {
   }
 
   public async getImage() {
+    this.loading = true;
     this.httpClient.get(`${environment.apiEndpoint}/image`).subscribe(
       (response) => {
         const {
