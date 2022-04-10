@@ -28,10 +28,8 @@ export class AppComponent {
   imageName: string | null = null;
   loading: boolean = false;
   errorMessage: Error | null = null;
-  environment: any;
 
   constructor(private httpClient: HttpClient) {
-    this.environment = environment;
     this.getImage();
   }
 
