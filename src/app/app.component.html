@@ -1,0 +1,7 @@
+<div>
+  <div *ngIf="loading">loading...</div>
+  <div *ngIf="errorMessage" class="alert alert-warning">
+    <strong>{{ errorMessage }}</strong>
+  </div>
+  <img src="{{ imageUrl }}" alt="{{ imageName }}" />
+</div>
