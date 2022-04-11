@@ -30,7 +30,6 @@ export class AppComponent {
   errorMessage: Error | null = null;
 
   constructor(private httpClient: HttpClient) {
-    console.log('Test');
     this.getImage();
   }
 
